@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="Bathroom_Blog::getblog" title="getblog" sortOrder="10">
+					<resource id="Bathroom_Blog::getblog_index" title="getblog index" sortOrder="10"/>
+				</resource>
+				<resource id="Bathroom_Blog::postblog" title="postblog" sortOrder="10">
+					<resource id="Bathroom_Blog::postblog_index" title="postblog index" sortOrder="10"/>
+				</resource>
+				<resource id="Bathroom_Blog::deleteblog" title="deleteblog" sortOrder="10">
+					<resource id="Bathroom_Blog::deleteblog_index" title="deleteblog index" sortOrder="10"/>
+				</resource>
+				<resource id="Magento_Backend::stores">
+					<resource id="Magento_Backend::stores_settings">
+						<resource id="Magento_Config::config">
+							<resource id="Bathroom_Blog::config_bathroom_blog" title="blog"/>
+						</resource>
+					</resource>
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>

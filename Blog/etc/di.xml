@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="Bathroom\Blog\Api\GetBlogManagementInterface" type="Bathroom\Blog\Model\GetBlogManagement"/>
+	<preference for="Bathroom\Blog\Api\CreateBlogManagementInterface" type="Bathroom\Blog\Model\CreateBlogManagement"/>
+	<preference for="Bathroom\Blog\Api\DeleteBlogManagementInterface" type="Bathroom\Blog\Model\DeleteBlogManagement"/>
+	<type name="Magento\Framework\Console\CommandList">
+		<arguments>
+			<argument name="commands" xsi:type="array">
+				<item name="CreateBlog" xsi:type="object">Bathroom\Blog\Console\Command\CreateBlog</item>
+				<item name="GetBlog" xsi:type="object">Bathroom\Blog\Console\Command\GetBlog</item>
+				<item name="DeleteBlog" xsi:type="object">Bathroom\Blog\Console\Command\DeleteBlog</item>
+			</argument>
+		</arguments>
+	</type>
+</config>
