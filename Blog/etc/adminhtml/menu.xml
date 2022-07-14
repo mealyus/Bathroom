@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Bathroom_Blog::getblog_index" title="getblog index" module="Bathroom_Blog" sortOrder="9999" resource="Bathroom_Blog::getblog_index" action="getblog/getblog/index"/>
+		<add id="Bathroom_Blog::postblog_index" title="postblog index" module="Bathroom_Blog" sortOrder="9999" resource="Bathroom_Blog::postblog_index" action="postblog/postblog/index"/>
+		<add id="Bathroom_Blog::deleteblog_index" title="deleteblog index" module="Bathroom_Blog" sortOrder="9999" resource="Bathroom_Blog::deleteblog_index" action="deleteblog/deleteblog/index"/>
+	</menu>
+</config>

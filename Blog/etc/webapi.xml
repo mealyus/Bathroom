@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+	<route url="/V1/bathroom-blog/getblog" method="GET">
+		<service class="Bathroom\Blog\Api\GetBlogManagementInterface" method="getGetBlog"/>
+		<resources>
+			<resource ref="anonymous"/>
+		</resources>
+	</route>
+	<route url="/V1/bathroom-blog/createblog" method="POST">
+		<service class="Bathroom\Blog\Api\CreateBlogManagementInterface" method="postCreateBlog"/>
+		<resources>
+			<resource ref="anonymous"/>
+		</resources>
+	</route>
+	<route url="/V1/bathroom-blog/deleteblog" method="DELETE">
+		<service class="Bathroom\Blog\Api\DeleteBlogManagementInterface" method="deleteDeleteBlog"/>
+		<resources>
+			<resource ref="anonymous"/>
+		</resources>
+	</route>
+</routes>
