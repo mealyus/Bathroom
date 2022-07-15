@@ -5,7 +5,7 @@
 */
 namespace Bathroom\Blog\Block\Postblog;
 
-class Index extends \Magento\Backend\Block\Template
+class Index extends \Magento\Framework\View\Element\Template
 {
 
     /**
